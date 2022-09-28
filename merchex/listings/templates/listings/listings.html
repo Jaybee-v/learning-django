@@ -1,0 +1,10 @@
+{% extends 'listings/base.html' %}
+{% block content %}
+        <h1>Les titres de chansons:</h1>
+
+        <ul>
+            {% for list in lists %}
+            <li>{{list.title|upper}}</li>
+            {% endfor %}
+        </ul>
+{% endblock %}
