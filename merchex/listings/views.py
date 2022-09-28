@@ -17,6 +17,6 @@ def listings(request):
     lists = Listing.objects.all()
     return render(request, 'listings/listings.html', {'lists': lists})
 
-
+#test commit
 def contact(request):
     return render(request, 'listings/contact.html')
